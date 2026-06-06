@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PAIX Control</string>
+    <string name="title_activity_main">PAIX Control</string>
+    <string name="package_name">com.paix.control</string>
+    <string name="custom_url_scheme">com.paix.control</string>
+</resources>

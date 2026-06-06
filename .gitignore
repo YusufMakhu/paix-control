@@ -1,0 +1,33 @@
+# --- Machine-specific ---
+**/local.properties
+
+# --- Dependencies / generated ---
+node_modules/
+app-android/www/
+
+# --- Android / Gradle build artifacts ---
+**/build/
+**/.gradle/
+.gradle/
+*.iml
+.idea/
+captures/
+.cxx/
+
+# --- Reverse-engineering INPUTS (proprietary — NOT redistributed) ---
+/src/
+/classes30.dex
+*.apk
+
+# --- Internal notes ---
+PAIX_HANDOFF.md
+
+# --- Editor / harness / python cache ---
+.claude/
+__pycache__/
+*.pyc
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
