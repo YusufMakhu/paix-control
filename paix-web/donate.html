@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donar · PAIX Control</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0d0b15;color:#ece9f7;
+      display:grid;place-items:center;min-height:100vh;margin:0;text-align:center;padding:24px}
+    h2{margin:0 0 6px} .muted{color:#a89fce;font-size:14px;margin:6px 0}
+    a.btn{display:inline-block;margin:18px 0;background:#00457C;color:#fff;text-decoration:none;
+      padding:14px 24px;border-radius:12px;font-weight:700;font-size:16px}
+  </style>
+</head>
+<body>
+  <div>
+    <h2>❤️ Gracias por apoyar PAIX&nbsp;Control</h2>
+    <p class="muted">Redirigiéndote a PayPal de forma segura…</p>
+    <a class="btn" id="pp" href="#" rel="noopener">Ir a PayPal →</a>
+    <p class="muted">Donación voluntaria · Makhu Studio (YusufMakhu)</p>
+  </div>
+  <script>
+    // El correo del destinatario va ofuscado (códigos de carácter): no aparece como
+    // texto plano, así que no se indexa ni se puede copiar de la página. Solo se
+    // reconstruye en el navegador para llevar la donación a PayPal al pulsar.
+    (function () {
+      var e = String.fromCharCode(121,108,111,109,97,115,100,117,108,99,101,64,103,109,97,105,108,46,99,111,109);
+      var url = 'https://www.paypal.com/donate/?business=' + encodeURIComponent(e)
+              + '&item_name=' + encodeURIComponent('PAIX Control')
+              + '&currency_code=EUR';
+      document.getElementById('pp').href = url;
+      setTimeout(function () { location.href = url; }, 900);
+    })();
+  </script>
+</body>
+</html>

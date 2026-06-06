@@ -1,0 +1,8 @@
+{
+  "appId": "com.paix.control",
+  "appName": "PAIX Control",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  }
+}

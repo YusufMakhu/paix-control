@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yusufmakhu.github.io/paix-control/sitemap.xml

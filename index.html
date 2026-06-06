@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="Assol5_TRw9ZKpsBqtRaBpbvhqC-23RiQO3s_gb-oK4">
+  <title>PAIX Control · App para controlar el badge LED PAIX / BackPAIX por Bluetooth (gratis)</title>
+  <meta name="description" content="¿La app oficial de BackPAIX / PAIX dejó de funcionar al cerrar la empresa? PAIX Control es la alternativa gratuita y 100% local para controlar tu badge LED por Bluetooth: editor de píxeles, emojis animados y texto deslizante. Web (Web Bluetooth) + APK de Android. Protocolo BLE reconstruido por ingeniería inversa. Free alternative app for the discontinued PAIX BackPAIX LED badge.">
+  <meta name="keywords" content="BackPAIX, PAIX, PAIX Design, BackPAIX app, BackPAIX app no funciona, BackPAIX app not working, alternativa BackPAIX, BackPAIX app alternative, controlar badge PAIX, badge LED bluetooth, smart badge, LED badge app, PAIX bluetooth, Web Bluetooth, APK BackPAIX, Realtek RTL8762, Kickstarter badge, reverse engineering">
+  <meta name="author" content="Makhu Studio (YusufMakhu)">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yusufmakhu.github.io/paix-control/">
+  <link rel="icon" href="paix-web/icons/icon-192.png">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PAIX Control">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="PAIX Control — revive el badge LED PAIX / BackPAIX por Bluetooth">
+  <meta property="og:description" content="Alternativa gratuita y local (web + APK Android) para controlar el badge LED PAIX/BackPAIX por Bluetooth cuando la app oficial ya no funciona.">
+  <meta property="og:url" content="https://yusufmakhu.github.io/paix-control/">
+  <meta property="og:image" content="https://yusufmakhu.github.io/paix-control/paix-web/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PAIX Control — controla tu badge LED PAIX/BackPAIX">
+  <meta name="twitter:description" content="App gratis y local (web + APK Android) para el badge LED PAIX/BackPAIX por Bluetooth.">
+  <meta name="twitter:image" content="https://yusufmakhu.github.io/paix-control/paix-web/icons/icon-512.png">
+  <!-- ===== Datos estructurados para Google ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PAIX Control",
+    "alternateName": ["BackPAIX app alternative", "Alternativa app BackPAIX", "PAIX badge controller"],
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Android, Web",
+    "url": "https://yusufmakhu.github.io/paix-control/",
+    "downloadUrl": "https://github.com/YusufMakhu/paix-control/releases/latest",
+    "softwareVersion": "1.0",
+    "description": "App gratuita y local para controlar el badge LED PAIX / BackPAIX por Bluetooth cuando la app oficial dejo de funcionar. Editor de pixeles, emojis animados y texto deslizante. Web y APK de Android.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "author": { "@type": "Organization", "name": "Makhu Studio", "url": "https://github.com/YusufMakhu" },
+    "keywords": "BackPAIX, PAIX, badge LED, bluetooth, alternativa app, Web Bluetooth, APK"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "La app oficial de BackPAIX / PAIX ya no funciona, que hago?",
+        "acceptedAnswer": { "@type": "Answer", "text": "PAIX Design cerro y su nube murio, por eso la app oficial ya no sirve. PAIX Control es una app nueva e independiente que vuelve a controlar el badge por Bluetooth, sin nube ni cuentas. Funciona como web y como APK de Android." } },
+      { "@type": "Question", "name": "Que es PAIX Control?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Una app gratuita y de codigo abierto para controlar el badge LED redondo PAIX / BackPAIX por Bluetooth: editor de pixeles, emojis animados, texto deslizante y animaciones." } },
+      { "@type": "Question", "name": "Necesito internet, cuenta o pagar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Es 100% local, gratis, sin nube, sin cuentas y sin rastreo. Tus disenos se guardan en tu dispositivo." } },
+      { "@type": "Question", "name": "Funciona en Android y en iPhone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "En Android funciona como web (Chrome con Web Bluetooth) o como APK instalable offline. En iPhone Web Bluetooth no esta disponible, asi que se recomienda Android." } }
+    ]
+  }
+  </script>
+  <style>
+    :root{--a:#b164e0;--a2:#8e24aa}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      color:#ece9f7;background:radial-gradient(900px 500px at 80% -10%,#8e24aa55,transparent 60%),linear-gradient(180deg,#0d0b15,#171327);min-height:100vh}
+    .wrap{max-width:780px;margin:0 auto;padding:48px 20px 64px}
+    .center{text-align:center}
+    .logo{width:96px;height:96px;border-radius:28px;margin:0 auto 18px;background:linear-gradient(145deg,var(--a),var(--a2));
+      display:grid;place-items:center;font-size:48px;box-shadow:0 12px 40px -10px var(--a2)}
+    h1{font-size:34px;margin:0 0 8px} h2{font-size:22px;margin:34px 0 10px}
+    .tag{color:#cabef0;font-size:18px;margin:0 0 6px} p{color:#bcb2e0;line-height:1.7}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:26px 0}
+    a.btn{text-decoration:none;font-weight:700;padding:14px 22px;border-radius:14px;color:#fff;
+      background:linear-gradient(145deg,var(--a),var(--a2));box-shadow:0 10px 26px -10px var(--a2)}
+    a.alt{background:#241f3a;border:1px solid #3a3360}
+    ul{color:#d7cff3;line-height:1.9} a{color:#c79bf0}
+    .faq{background:#1c1830aa;border:1px solid #332b52;border-radius:14px;padding:14px 18px;margin:12px 0}
+    .faq h3{margin:0 0 6px;font-size:17px} footer{margin-top:40px;color:#8a82ad;font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="center">
+      <div class="logo">🅿️</div>
+      <h1>PAIX&nbsp;Control</h1>
+      <p class="tag">Revive tu badge LED <strong>PAIX</strong> / <strong>BackPAIX</strong> — por Bluetooth, gratis y 100% local.</p>
+      <p>¿La <strong>app oficial de BackPAIX dejó de funcionar</strong>? PAIX&nbsp;Design cerró y su nube murió, dejando el badge inservible. <strong>PAIX&nbsp;Control</strong> es la <strong>alternativa gratuita e independiente</strong> que vuelve a controlarlo por <strong>Bluetooth</strong>, con el protocolo BLE reconstruido por ingeniería inversa. Sin nube, sin cuentas, sin rastreo.</p>
+      <div class="cta">
+        <a class="btn" href="paix-web/">▶ Abrir la app (Web Bluetooth)</a>
+        <a class="btn alt" href="https://github.com/YusufMakhu/paix-control/releases/latest">📥 Descargar APK (Android)</a>
+      </div>
+      <div class="cta">
+        <a class="btn alt" href="https://github.com/YusufMakhu/paix-control">📦 Código en GitHub</a>
+        <a class="btn alt" href="paix-web/donate.html">❤️ Donar</a>
+      </div>
+    </div>
+
+    <h2>Qué puedes hacer</h2>
+    <ul>
+      <li>🎨 <strong>Editor de píxeles</strong> circular 14×14 para crear tus propios diseños.</li>
+      <li>😄 <strong>Emojis animados</strong> a pantalla completa: guiño, beso, risa, corazón…</li>
+      <li>📝 <strong>Texto deslizante</strong> en bucle con fuente propia y mini-iconos.</li>
+      <li>🎬 <strong>Animaciones</strong> (intermitentes, latido, ruleta…) y editor por fotogramas.</li>
+      <li>📱 Funciona como <strong>web</strong> (Chrome en Android) y como <strong>APK offline</strong>.</li>
+    </ul>
+
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq"><h3>La app oficial de BackPAIX / PAIX ya no funciona, ¿qué hago?</h3>
+      <p>PAIX Design cerró y su nube dejó de operar, por eso la app oficial ya no sirve. PAIX Control la sustituye: controla el badge por Bluetooth sin nube ni cuentas, como web o como APK de Android.</p></div>
+    <div class="faq"><h3>¿Es gratis y seguro?</h3>
+      <p>Sí. Es gratuita, de código abierto e inspeccionable, sin anuncios, sin rastreo y sin servidores. Solo habla con tu badge por Bluetooth.</p></div>
+    <div class="faq"><h3>¿Necesito internet o una cuenta?</h3>
+      <p>No. Todo es 100% local; tus diseños se guardan en tu propio dispositivo.</p></div>
+    <div class="faq"><h3>¿Funciona en iPhone?</h3>
+      <p>Web Bluetooth no está disponible en iPhone; usa <strong>Android</strong> (Chrome o la APK).</p></div>
+
+    <footer>Hecho por <strong>Makhu Studio (YusufMakhu)</strong> · Licencia de uso personal (no comercial) · Proyecto independiente, no afiliado a PAIX&nbsp;Design.</footer>
+  </main>
+  <noscript>Abre la app en <a href="paix-web/">paix-web/</a>.</noscript>
+</body>
+</html>
